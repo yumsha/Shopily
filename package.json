@@ -1,16 +1,17 @@
 {
-  "name": "gearscope-ddg",
+  "name": "shopily",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./style/input.css -o ./dist/output.css --watch"
+    "yuma": "npx tailwindcss -i ./style/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17"
@@ -43,6 +44,7 @@
     "fast-glob": "^3.3.3",
     "fastq": "^1.19.1",
     "fill-range": "^7.1.1",
+    "flowbite": "^3.1.2",
     "foreground-child": "^3.3.1",
     "fraction.js": "^4.3.7",
     "function-bind": "^1.1.2",

@@ -1,14 +1,16 @@
 module.exports = {
-  content: ["./**/*.html"],
+  content: ["./**/*.html", "!./node_modules"],
   theme: {
     extend: {
+      fontFamily: {
+        poetsen: ['"Poetsen One"', 'sans-serif'],
+        poppins: ['"Poppins"', 'sans-serif']
+        
+      },
       colors: {
-        goldStart: '#FFD700',
-        goldEnd: '#FFA500',
-        silverStart: '#C0C0C0',
-        silverEnd: '#A9A9A9',
-        bronzeStart: '#CD7F32',
-        bronzeEnd: '#8B4513',
+        'biru1': '#213448',
+        'biru2': '#003A76',
+        'biru3': '#547792',
       },
       keyframes: {
         fadeInUp: {
@@ -21,5 +23,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 }

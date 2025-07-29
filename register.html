@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Shopily</title>
+  <link rel="icon" href="assets/Shopily-1.png" type="image/png">
+  <link href="./dist/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-[#FDFFE4] font-poppins">
+  <div class="flex items-center justify-center min-h-screen px-4">
+    <div class="bg-white rounded-xl shadow-xl w-full max-w-md p-8">
+      <div class="flex justify-center mb-4">
+        <img src="assets/Shopily-upper.png" alt="Shopily Logo" class="h-10 w-auto">
+      </div>
+
+      <h2 class="text-2xl font-bold text-[#0D2540] mb-6 text-center">Create Your Account</h2>
+
+      <form id="registerForm" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Full Name</label>
+          <input type="text" id="fullName" required class="w-full mt-1 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#0D2540]">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" required class="w-full mt-1 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#0D2540]">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Password</label>
+          <input type="password" id="password" required class="w-full mt-1 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#0D2540]">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Confirm Password</label>
+          <input type="password" id="confirmPassword" required class="w-full mt-1 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#0D2540]">
+        </div>
+        <button type="submit" class="w-full bg-[#0D2540] text-white py-2 rounded-md hover:bg-[#13324A] transition">Register</button>
+        <p class="text-sm text-center text-gray-600">Already have an account? <a href="guest.html" class="text-[#E63946] hover:underline">Sign In</a></p>
+      </form>
+    </div>
+  </div>
+
+
+    <!-- Modal Success -->
+  <div id="modalSuccess" class="hidden fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center">
+    <div class="bg-white rounded-xl shadow-xl w-80 p-6 text-center animate-fadeInUp">
+      <i class="fa-solid fa-circle-check text-green-500 text-3xl mb-2"></i>
+      <h3 class="text-lg font-bold text-green-600 mb-1">Berhasil Daftar!</h3>
+      <p class="text-sm text-gray-600">Akun kamu berhasil dibuat, silakan login.</p>
+    </div>
+  </div>
+  <script src="register.js"></script>
+</body>
+</html>

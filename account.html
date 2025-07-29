@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Profile - Shopily</title>
+  <link rel="icon" href="assets/Shopily-1.png" type="image/png">
+  <link href="./dist/output.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="bg-[#FDFFE4] font-poppins text-[#0D2540] min-h-screen">
+
+  <!-- Navbar -->
+  <div class="flex items-center justify-between bg-gradient-to-t from-[#13324A] to-[#0D2540] px-8 py-6">
+    <img src="assets/Shopily-upper.png" alt="Shopily Logo" class="h-10">
+    <a href="main.html" class="text-white hover:underline"><i class="fa-solid fa-house"></i></a>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row gap-8">
+    <!-- Profile Card -->
+    <div class="bg-white rounded-xl shadow p-6 w-full md:max-w-xs text-center">
+      <img src="assets/user.png" alt="User Avatar" class="w-24 h-24 rounded-full mx-auto mb-4">
+      <h3 class="text-lg font-semibold" id="profileName">Guest User</h3>
+      <p class="text-sm text-gray-500" id="profileEmail">guest@example.com</p>
+      <button class="mt-4 text-sm text-[#E63946] hover:underline" onclick="logoutUser()">Logout</button>
+    </div>
+
+    <!-- History and Edit Section -->
+    <div class="flex-1 space-y-10">
+      <!-- Edit Profile Card -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <h2 class="text-xl font-bold mb-4">Edit Profile</h2>
+        <form id="editProfileForm" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Nama Lengkap</label>
+            <input type="text" id="editName" class="w-full border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0D2540]" placeholder="Nama kamu...">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Email</label>
+            <input type="email" id="editEmail" class="w-full border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0D2540]" placeholder="Email kamu...">
+          </div>
+          <div>
+            <p class="text-sm font-semibold py-5">Forgot your Password? Create a new one!</p>
+            <label class="block text-sm font-medium mb-1">Password Lama</label>
+            <input type="password" id="editPassword" class="w-full border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0D2540]" placeholder="••••••••">
+            <label class="block text-sm font-medium mb-1">Password Baru</label>
+            <input type="password" id="editPassword" class="w-full border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0D2540]" placeholder="••••••••">
+            <label class="block text-sm font-medium mb-1">Konfirmasi Password Baru</label>
+            <input type="password" id="editPassword" class="w-full border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0D2540]" placeholder="••••••••">
+          </div>
+          <button type="submit" class="w-full bg-[#0D2540] hover:bg-[#13324A] text-white py-2 rounded-md">Simpan Perubahan</button>
+        </form>
+      </div>
+
+      <!-- Riwayat Pembelian -->
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Riwayat Pembelian</h2>
+        <div id="historyContainer" class="space-y-6"></div>
+        <div id="noHistory" class="text-center text-gray-500 mt-10 hidden">Belum ada riwayat pembelian.</div>
+      </div>
+    </div>
+  </div>
+  <script src="account.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Shopily</title>
+  <link rel="icon" href="assets/Shopily-1.png" type="image/png" />
+  <link href="./dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="bg-[#FDFFE4] font-poppins text-[#0D2540]">
+
+  <!-- Navbar -->
+  <div class="flex items-center justify-between bg-gradient-to-t from-[#13324A] to-[#0D2540] px-8 py-6">
+    <img src="assets/Shopily-upper.png" alt="Shopily Logo" class="h-10" />
+    <div class="text-white text-sm space-x-4">
+      <a href="main.html" class="hover:underline">
+        <i class="fa-solid fa-house fa-lg"></i>
+      </a>
+      <a href="carr.html" class="hover:underline">
+        <i class="fa-solid fa-cart-shopping fa-lg"></i>
+      </a>
+      <a href="#" class="hover:underline">
+        <i class="fa-solid fa-gear fa-lg"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto mt-10 px-6">
+    <h1 class="text-2xl font-bold mb-6">Checkout</h1>
+
+    <div id="checkoutItems" class="space-y-4"></div>
+
+    <div class="mt-8 border-t pt-6 text-right">
+      <p class="text-lg font-semibold mb-2">Total: <span id="checkoutTotal" class="text-[#E63946]">Rp 0</span></p>
+      <button id="confirmCheckout" class="bg-[#E63946] hover:bg-[#d62828] text-white px-6 py-3 rounded-full font-semibold">Confirm & Pay</button>
+    </div>
+  </div>
+
+  <script src="product.js"></script>
+</body>
+</html>

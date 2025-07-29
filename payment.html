@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment - Shopily</title>
+  <link href="./dist/output.css" rel="stylesheet"/>
+</head>
+<body class="bg-[#FDFFE4] font-poppins text-[#0D2540] min-h-screen">
+  <div class="max-w-2xl mx-auto mt-12 px-6">
+    <h1 class="text-2xl font-bold mb-6">Pembayaran</h1>
+
+    <div id="checkoutItems" class="space-y-6 mb-6"></div>
+    <p class="text-right text-lg font-bold mb-6">Total: <span id="checkoutTotal" class="text-[#E63946]">Rp 0</span></p>
+
+    <div class="text-right">
+      <button id="confirmCheckout" class="bg-[#E63946] hover:bg-[#c53030] text-white px-6 py-3 rounded-full font-semibold">
+        Konfirmasi dan Bayar
+      </button>
+    </div>
+  </div>
+
+  <script src="product.js"></script>
+</body>
+</html>
